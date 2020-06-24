@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h3>software testing methodologies</h3>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>White box testing</h2>
+      <img src="whiteBoxTesting.png" class= "img-fluid" alt=""/>
+      <p>White-box testing (also known as clear box testing, glass box testing, transparent box testing, and structural testing) is a method of software testing that tests internal structures or workings of an application.
+      In this type of testing, the code is visible to the tester. It focuses primarily on verifying the flow of inputs and outputs through the application, improving design and usability, strengthening security. 
+      It is one of two parts of the Box Testing approach to software testing. Its counterpart, Blackbox testing, involves testing from an external or end-user type perspective. On the other hand, Whitebox testing is based on the inner workings of an application and revolves around internal testing. 
+      </p>
+    </div>
+    <div class="card">
+      <h2>BLACK box testing</h2>
+      <img src="black_box_testing.png" class="img-fluid" alt="" />
+      <p> It is a way of software testing in which the internal structure or the program or the code is hidden and nothing is known about it.
+      BLACK BOX TESTING is defined as a testing technique in which functionality of the Application Under Test (AUT) is tested without looking at the internal code structure, implementation details and knowledge of internal paths of the software. This type of testing is based entirely on software requirements and specifications.
+      In BlackBox Testing we just focus on inputs and output of the software system without bothering about internal knowledge of the software program. 
+      
+      </p>
+    </div>
+    <div class="card">
+      <h2>Grey box testing</h2>
+      <img src="GreyBoxTest.png" class="img-fluid" alt="" />
+      <p> 
+      GRAY BOX TESTING is a technique to test the software product or application with partial knowledge of the internal workings of an application.
+      The purpose of this testing is to search for defects due to improper code structure or improper functioning usage of an application.
+      In this process, context-specific errors that are related to web systems are commonly identified. It increases the testing coverage by concentrating on all of the layers of any complex system. 
+      </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>...................</p>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Im on instagram @pkaustubh_click </p>
+      <a href="https://www.instagram.com/pkaustubh_click/ " class="img-fluid" alt=""</a>
+      
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
